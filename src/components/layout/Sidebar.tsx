@@ -40,6 +40,7 @@ export const Sidebar: FC<PropsType> = memo((props) => {
         assets
     } = props
 
+
     useEffect(() => {
         if (assets && cryptoData) {
 
