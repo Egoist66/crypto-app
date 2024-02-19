@@ -42,8 +42,11 @@ export const Sidebar: FC<PropsType> = memo((props) => {
 
 
     useEffect(() => {
+        console.log(cryptoData);
         if (assets && cryptoData) {
-
+            console.log('====================================');
+           
+            console.log('====================================');
             setAssetsResult(
                 assets.map(asset => {
                     const coin = cryptoData.result.find(c => c.id === asset.id)
